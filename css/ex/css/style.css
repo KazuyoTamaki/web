@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* 赤のスタイル */
+.red{
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: black;
+    text-align: center;
+}
+
+/* 青のスタイル */
+.blue{
+    color: blue;
+font-size: 48px;
+text-align: right;
+}
+
+/* 緑のスタイル */
+.green{
+    color: green;
+    font-size: 64px;
+    cursor: grab;
+    background:cadetblue;
+}
