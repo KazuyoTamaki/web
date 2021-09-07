@@ -5,7 +5,7 @@
     font-size: 24px;
     font-family: serif;
     font-weight: bold;
-
+background-color:green;
 }
 
 #font2 {
@@ -14,14 +14,18 @@
     font-family: sans-serif;
     font-weight: lighter;
     font-style: italic;
+    text-decoration: underline coral;
 }
 
 #layout1 {
     text-align: right;
     line-height: 2em;
+    text-decoration: plum wavy underline;
+    font-family: fantasy;
 }
 
 #layout2 {
     text-align: center;
     line-height: 160%;
+    text-decoration: underline overline #30FFA0;
 }
