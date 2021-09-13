@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+html{
+    font-size: 20px;
+}
+
+.boxtest1 {
+color: bisque;
+background-color: darkgreen;
+width: 30%;
+height: auto;
+border: 5px ridge red;
+}
+
+.boxtest2{
+    background-color: darkgreen;
+padding 0.5em;
+}

@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* ユニバーサルセレクタ */
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+/* html全体の設定 */
+html{
+    font-size: 16px;
+}
+
+/* クラス　container の設定 */
+.container{
+    width: 70%;
+    margin: 10rem auto;
+}
+
+/* font copy */
+body{
+        font-family: 'Kaisei Tokumin', serif;
+}
+
+/* h要素のフォント、下の間隔を指定 */
+h1,h2,h3{
+    font-family:  sans-serif;
+    margin-bottom: 1rem;
+}
+
+.inline-block{
+/* インラインブロックの宣言・必須項目 */
+    display: inline-block;
+    width: 20%;
+/* 垂直位置ぞろえ */
+vertical-align: top;
+}
+
+/* インラインブロックの子要素a */
+.inline-block>a{
+    /* リンク領域をblockにする */
+    /* (リンクの文字項目以外もタップ可能にする) */
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: red;
+}
+
+/* h1のフォントサイズ、設定の3倍 */
+h1{
+    font-size: 3rem;
+}
+/* h2 2倍 */
+h2{
+    font-size: 2rem;
+}
+/* h3 1.5倍 */
+h3{
+    font-size: 1.5rem;
+}
+
+/* pの文字間隔（縦）1.5文字分 */
+p{
+    line-height: 1.5rem;
+}
+
+/* 空間あけ（topはつけても合体するため） */
+.mb-1rem{
+    margin-bottom: 1rem;
+}
+
+/* flex コンテナの最小設定 */
+.flex {
+    display: flex;
+}
+/* flex アイテムの最小設定 */
+.item {
+    flex: auto;
+    width: 33%;
+}
