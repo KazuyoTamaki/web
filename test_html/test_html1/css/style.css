@@ -1,0 +1,10 @@
+@charset "UTF-8";
+main {
+    width: 960px;
+    padding: 4%;
+}
+
+.mainvisual {
+    height: 600px;
+    object-fit: cover;
+}

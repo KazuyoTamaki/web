@@ -37,10 +37,35 @@
             position: absolute;
             top: 40px;
             left: 40px;
+
         }
 
         .base {
             position: relative;
+        }
+
+        /* 親の要素relativeなので親要素の左上から0，0px　z-indexで一番前に出てくる*/
+        /* bottomとrightも指定できる */
+        .ab0 {
+            position: absolute;
+            z-index: 100;
+        }
+
+        /* 親の要素relativeなので親要素の左上から0px,10px */
+        .ab1 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+        }
+
+        /* z-index は大きいほど手前に出てくる*/
+        /* 親の要素relativeなので親要素の左上から20px,20px */
+        .ab2 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
         }
     </style>
 </head>
@@ -55,5 +80,13 @@
         <div class="inside blue relative"></div>
         <div class="inside green absolute"></div>
     </div>
+    <!-- 箱outside base -->
+    <div class="outside base">
+        <!-- inside 色 位置を指定 -->
+        <div class="inside red ab0"></div>
+        <div class="inside blue ab1"></div>
+        <div class="inside green ab2"></div>
+    </div>
+
 </body>
 </html>
