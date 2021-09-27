@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+body{
+    background: repeat center/100vw url("../images/publicdomainq-0004659mlb.jpg");
+    font-size: 24px;
+}
+header{
+    position: fixed;
+    top:0px;
+}
+
+.head_ul{
+    display: block;
+    width: 100vw;
+    background-color: rgb(99, 78, 78);
+    padding: 5px;
+    text-align: center;
+}
+
+.head_li{
+    display: inline-block;
+    width: 18vw;
+    background-color: rgb(110, 92, 92);
+    border: 3px solid white;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
+
+.head_li>a{
+    text-decoration: none;
+}
+
+article{
+    margin: 5vw 10vw;
+    background-color: rgba(255, 255, 255,.7);
+    height: fit-content;
+}
+
+div{
+    text-align: center;
+    color: darkslategrey;
+}
+
+h1{
+    font: size 24px;
+    border-bottom: 1px;
+}
+
+.div_h1{
+text-align: center;
+background-color: rgba(95, 79, 110,.5);
+font-size: 28px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color:white;
+padding: 5px;
+margin: 10px 0px;
+}
+
+.top_img{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+
+}
+
+.p_top{
+    border: double white;
+    background-color: rgba(133, 114, 151, 0.5);
+    margin: 20px 15vw;
+    padding: 5px;
+}
+
+h2{
+    background-color: rgba(68, 68, 73, 0.5);
+    padding: 5px;
+
+}
+
+h3{
+    background-color: rgba(255,255,255,.7);
+    padding: 5px;
+    margin-bottom: 3vw ;
+}
+
+
+.scroll-box {
+    overflow-x: scroll;
+    width: 70vw;
+    height: 20vw;
+    margin: 0vw 3vw;
+}
+
+.color_list_ul{
+    display:flex;
+}
+.color_list_li{
+    list-style: none;
+}
+
+.color_list_li>img{
+    width: 20vw;
+    margin: 10px 10px 0px 10px;
+    border: solid black 3px;
+    border-radius: 5%;
+}
+
+figcaption {
+    font-size: 18px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    width: 20vw;
+    margin: 0px 10px;
+    padding:5px 3px;
+    border-radius: 3%;
+}
+
+
+.h3_li{
+    text-indent: 2rem;
+    list-style: none;
+    padding: 2px;
+}
+
+.h3_li2{
+    text-indent: 1rem;
+    list-style: none;
+    color: rgb(29, 49, 49);
+    background-color: rgba(133, 114, 151, 0.5);
+    margin: 15px;
+    padding: 1rem;
+    border-radius: 7%;
+}
