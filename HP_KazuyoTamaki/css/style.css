@@ -1,12 +1,15 @@
 @charset "UTF-8";
-
+/* --------------------------------------------- */
+/* ▼モバイルファースト (全環境に共通のデザイン) */
+/* --------------------------------------------- */
 body{
     background: repeat center/100vw url("../images/publicdomainq-0004659mlb.jpg");
-    font-size: 24px;
+    font-size: 1.2vw;
 }
 header{
     position: fixed;
     top:0px;
+    left:0px;
 }
 
 .head_ul{
@@ -15,6 +18,7 @@ header{
     background-color: rgb(99, 78, 78);
     padding: 5px;
     text-align: center;
+    margin: 0px;
 }
 
 .head_li{
@@ -22,18 +26,16 @@ header{
     width: 18vw;
     background-color: rgb(110, 92, 92);
     border: 3px solid white;
-    font-size: 20px;
-    color: white;
     text-align: center;
     padding: 2px;
 }
 
 .head_li>a{
-    text-decoration: none;
+    color: white;
 }
 
 article{
-    margin: 5vw 10vw;
+    margin: 8vw 10vw;
     background-color: rgba(255, 255, 255,.7);
     height: fit-content;
 }
@@ -44,14 +46,14 @@ div{
 }
 
 h1{
-    font: size 24px;
+    font-size:1.5vw;
     border-bottom: 1px;
 }
 
 .div_h1{
 text-align: center;
 background-color: rgba(95, 79, 110,.5);
-font-size: 28px;
+font-size: 1.75vw;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 color:white;
 padding: 5px;
@@ -59,8 +61,8 @@ margin: 10px 0px;
 }
 
 .top_img{
-    width: 10vw;
-    height: 10vw;
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%;
 
 }
@@ -80,15 +82,20 @@ h2{
 
 h3{
     background-color: rgba(255,255,255,.7);
-    padding: 5px;
-    margin-bottom: 3vw ;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    margin-bottom: 5vw ;
+    margin-top: 0px;
 }
 
+ul{
+    margin: 1vw 0vw;
+}
 
 .scroll-box {
     overflow-x: scroll;
     width: 70vw;
-    height: 20vw;
+    height: 35vw;
     margin: 0vw 3vw;
 }
 
@@ -100,28 +107,51 @@ h3{
 }
 
 .color_list_li>img{
-    width: 20vw;
-    margin: 10px 10px 0px 10px;
+    width: 30vw;
+    margin: 0px;
     border: solid black 3px;
     border-radius: 5%;
 }
 
 figcaption {
-    font-size: 18px;
+    font-size: 0.5rem;
     background-color: #222;
     color: #fff;
     text-align: center;
-    width: 20vw;
-    margin: 0px 10px;
-    padding:5px 3px;
-    border-radius: 3%;
+    width: 30vw;
+    margin: 0px;
+    margin-right: 5px;
+    padding:5px 2px;
 }
 
 
+ul{
+    /* display: table; */
+    width: 80vw;
+    text-align: left;
+}
+
 .h3_li{
-    text-indent: 2rem;
+    text-align: left;
     list-style: none;
     padding: 2px;
+    margin-right: 0px;
+    text-indent: 1rem;
+    margin:0px;
+    display:inline-block;
+    width:20vw;
+    vertical-align:top; /* 上端揃え */
+}
+
+.h3_li-2{
+    text-align: left;
+    list-style: none;
+    padding: 2px;
+    margin-right: 0px;
+    margin:0px;
+    display:inline-block;
+    width: 45vw;
+    vertical-align:top; /* 上端揃え */
 }
 
 .h3_li2{
@@ -129,7 +159,75 @@ figcaption {
     list-style: none;
     color: rgb(29, 49, 49);
     background-color: rgba(133, 114, 151, 0.5);
-    margin: 15px;
-    padding: 1rem;
+    margin: 2vw;
+    padding: 3vw;
     border-radius: 7%;
+    width: 60vw;
+}
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media (min-width: 768px) {
+
+    body{
+    background: repeat center/100vw url("../images/publicdomainq-0004659mlb.jpg");
+    font-size: 2.25vw;
+}
+
+.scroll-box {
+    overflow-x: scroll;
+    width: 70vw;
+    height: 30vw;
+    margin: 0vw 3vw;
+}
+
+
+.h3_li{
+    width: 15vw; /*変更箇所*/
+    text-align: left;
+    list-style: none;
+    padding: 2px;
+    margin-right: 0px;
+    text-indent: 1rem;
+}
+
+figcaption {
+    font-size: 1rem;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    width: 30vw;
+    margin: 10px 0px 0px 5px;
+    padding:5px 2px;
+}
+
+}
+
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media (min-width: 1024px) {
+body{
+    background: repeat center/100vw url("../images/publicdomainq-0004659mlb.jpg");
+    font-size: 20px;
+}
+
+.scroll-box {
+    overflow-x: scroll;
+    width: 70vw;
+    height: 27vw;
+    margin: 0vw 3vw;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    width: 30vw;
+    margin: 10px 0px 0px 5px;
+    padding:5px 2px;
+}
+
 }
