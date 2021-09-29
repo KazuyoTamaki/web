@@ -5,6 +5,7 @@
 body{
     background: repeat center/100vw url("../images/publicdomainq-0004659mlb.jpg");
     font-size: 1.2vw;
+    width: 100vw;
 }
 header{
     position: fixed;
@@ -32,39 +33,42 @@ header{
 
 .head_li>a{
     color: white;
+    display: block;
+}
+
+a.ancor{
+    display: block;
+    padding-top: 70px;
+    margin-top: -70px;
 }
 
 article{
     margin: 8vw 10vw;
     background-color: rgba(255, 255, 255,.7);
     height: fit-content;
+    width: 80vw;
 }
 
 div{
     text-align: center;
     color: darkslategrey;
+    width:100%;
 }
 
-h1{
+.h1_div{
+    background-color: rgba(95, 79, 110,.5);
+    text-align: center;
     font-size:1.5vw;
     border-bottom: 1px;
-}
-
-.div_h1{
-text-align: center;
-background-color: rgba(95, 79, 110,.5);
-font-size: 1.75vw;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-color:white;
-padding: 5px;
-margin: 10px 0px;
+    color:white;
+    padding: 10px 0;
+    width: 100%;
 }
 
 .top_img{
     width: 15vw;
     height: 15vw;
     border-radius: 50%;
-
 }
 
 .p_top{
@@ -77,7 +81,6 @@ margin: 10px 0px;
 h2{
     background-color: rgba(68, 68, 73, 0.5);
     padding: 5px;
-
 }
 
 h3{
@@ -88,13 +91,9 @@ h3{
     margin-top: 0px;
 }
 
-ul{
-    margin: 1vw 0vw;
-}
-
 .scroll-box {
     overflow-x: scroll;
-    width: 70vw;
+    width: 65vw;
     height: 35vw;
     margin: 0vw 3vw;
 }
@@ -124,11 +123,11 @@ figcaption {
     padding:5px 2px;
 }
 
-
 ul{
     /* display: table; */
-    width: 80vw;
-    text-align: left;
+    width: 70vw;
+    text-align: center;
+    margin: 1vw 0vw;
 }
 
 .h3_li{
@@ -155,6 +154,7 @@ ul{
 }
 
 .h3_li2{
+    text-align: left;
     text-indent: 1rem;
     list-style: none;
     color: rgb(29, 49, 49);
@@ -165,19 +165,53 @@ ul{
     width: 60vw;
 }
 
+.gazo_list{
+    width: 5vw;
+    height: 20vw;
+
+}
+
+footer{
+    width: 100vw;
+    color: white;
+    background-color: rgb(110, 92, 92);
+    text-align: center;
+    padding: 2px;
+}
+
+.video_size{
+    width:30vw;
+}
+
+.owari{
+    text-align: center;
+}
+
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */
 /* -------------------------------------------- */
 @media (min-width: 768px) {
-
-    body{
+body{
     background: repeat center/100vw url("../images/publicdomainq-0004659mlb.jpg");
     font-size: 2.25vw;
+    width: 100vw;
+}
+
+article,.div_h1{
+    width:75vw;
+}
+
+div{
+    width: 70vw;
+}
+
+ul{
+width: 70vw;
 }
 
 .scroll-box {
     overflow-x: scroll;
-    width: 70vw;
+    width: 65vw;
     height: 30vw;
     margin: 0vw 3vw;
 }
@@ -202,16 +236,36 @@ figcaption {
     padding:5px 2px;
 }
 
+.h3_li2{
+    text-indent: 1rem;
+    list-style: none;
+    color: rgb(29, 49, 49);
+    background-color: rgba(133, 114, 151, 0.5);
+    margin: 2vw;
+    padding: 3vw;
+    border-radius: 7%;
+    width: 65vw;
+}
+
+
+
 }
 
 /* ------------------------------------ */
 /* ▼PC用デザインとして付け足すデザイン */
 /* ------------------------------------ */
 @media (min-width: 1024px) {
+
 body{
     background: repeat center/100vw url("../images/publicdomainq-0004659mlb.jpg");
     font-size: 20px;
+    width: 100vw;
 }
+
+article{
+    width: 80%;
+}
+
 
 .scroll-box {
     overflow-x: scroll;
@@ -229,5 +283,47 @@ figcaption {
     margin: 10px 0px 0px 5px;
     padding:5px 2px;
 }
+
+.h3_li{
+    text-align: left;
+    list-style: none;
+    padding: 2px;
+    margin-right: 0px;
+    text-indent: 1rem;
+    margin:0px;
+    display:inline-block;
+    width: 10vw;
+    vertical-align:top; /* 上端揃え */
+}
+
+.h3_li-2{
+    text-align: left;
+    list-style: none;
+    padding: 2px;
+    margin-right: 0px;
+    margin:0px;
+    display:inline-block;
+    width: 50vw;
+    vertical-align:top; /* 上端揃え */
+}
+
+.h3_li2{
+    text-align: left;
+    text-indent: 1rem;
+    list-style: none;
+    color: rgb(29, 49, 49);
+    background-color: rgba(133, 114, 151, 0.5);
+    margin: 2vw;
+    padding: 3vw;
+    border-radius: 7%;
+    width: 65vw;
+}
+.scroll-box {
+    overflow-x: scroll;
+    width: 70vw;
+    height: 30vw;
+    margin: 0vw 3vw;
+}
+
 
 }
